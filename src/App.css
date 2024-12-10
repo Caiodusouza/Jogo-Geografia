@@ -1,0 +1,113 @@
+/* Reset de margens e preenchimentos, garantindo consistência em todos os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do body */
+html, body {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff; /* Cor de fundo suave */
+}
+
+.App {
+  background-color: #ffffff; /* Fundo branco para o conteúdo */
+  border-radius: 12px; /* Cantos arredondos */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+  width: 100%;
+  max-width: 500px; /* Limite de largura */
+  padding: 30px;
+  text-align: center;
+  color: #333333; /* Cor do texto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Garante que o conteúdo esteja centralizado */
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2c3e50; /* Cor mais escura para o título */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #34495e; /* Cor do subtítulo */
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #e74c3c; /* Cor de alerta para o tempo restante */
+  margin-bottom: 10px;
+}
+
+/* Estilo do botão */
+button {
+  background-color: #3498db; /* Cor suave de fundo para os botões */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+  max-width: 250px; /* Limite de largura dos botões */
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #2980b9; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento do botão ao passar o mouse */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Estilo das opções de resposta */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center; /* Garante que os botões fiquem centralizados */
+}
+
+/* Estilo do temporizador */
+.timer {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #e74c3c; /* Cor para indicar o tempo */
+}
+
+/* Estilo da tela final */
+.game-over {
+  margin-top: 30px;
+}
+
+.game-over h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.game-over p {
+  font-size: 1.25rem;
+  color: #16a085;
+}
+
+/* Estilo do título do jogo */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2d3e50;
+}
